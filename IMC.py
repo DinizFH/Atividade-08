@@ -9,7 +9,8 @@ def imc():
   peso = float(input('Digite o seu peso: '))
   fimc = peso / (math.pow(altura, 2))
   print('A Calcular')
-
+  sleep(1.9)  # temporizador
+  os.system('cls')  # limpar tela
   print('O seu Índice de massa corporal é de {:.2f}.'. format(fimc))
   if fimc < 17:
    print('Muito abaixo do peso')
